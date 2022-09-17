@@ -3,3 +3,5 @@ music/logs/
 venv/
 .env
 creds.json
+__pycache__/
+*.pyc
