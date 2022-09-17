@@ -105,6 +105,4 @@ async def profile(ctx, member: interactions.User):
     await ctx.send(embeds=embed)
 
 bot.load("exts.moderation")
-# bot.load("exts.music")
-# Music bot offline until I get hosting for Lavalink
 bot.start()
