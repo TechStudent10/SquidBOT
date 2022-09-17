@@ -1,5 +1,5 @@
 import interactions
-from interactions.ext.lavalink import VoiceClient, VoiceState
+# from interactions.ext.lavalink import VoiceClient, VoiceState
 
 import firebase_admin
 from firebase_admin import db
@@ -27,7 +27,7 @@ default_app = firebase_admin.initialize_app(cred_obj, {
 root = db.reference("/")
 warns = db.reference("/warns")
 
-bot = VoiceClient(token=os.getenv("TOKEN"), intents=interactions.Intents.DEFAULT | interactions.Intents.GUILD_MEMBERS)
+bot = interactions.Client(token=os.getenv("TOKEN"), intents=interactions.Intents.DEFAULT | interactions.Intents.GUILD_MEMBERS)
 LOGS_CHANNEL = 1016429819094913044
 
 @bot.event
