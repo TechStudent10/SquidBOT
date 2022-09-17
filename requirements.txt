@@ -24,8 +24,6 @@ grpcio==1.48.1
 grpcio-status==1.48.1
 httplib2==0.20.4
 idna==3.3
-interactions-lavalink==0.0.3
-lavalink==4.0.2
 msgpack==1.0.4
 multidict==6.0.2
 proto-plus==1.22.1
