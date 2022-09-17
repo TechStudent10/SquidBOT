@@ -1,0 +1,5 @@
+music/Lavalink.jar
+music/logs/
+venv/
+.env
+creds.json
