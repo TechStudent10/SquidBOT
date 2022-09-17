@@ -6,3 +6,4 @@ creds.json
 __pycache__/
 *.pyc
 music/
+music_old.py
