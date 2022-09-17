@@ -1,6 +1,6 @@
 # SquidBOT
 
-A Discord moderation and music bot for SquidKIDS, the official Discord Server for Geometry Dash player and content creator Squidel.
+A Discord moderation for SquidKIDS, the official Discord Server for Geometry Dash player and content creator Squidel.
 
 ### Setup
 
