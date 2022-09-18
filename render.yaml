@@ -1,0 +1,19 @@
+services:
+  - type: pserv
+    name: bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: TOKEN
+        sync: false
+      - key: FIREBASE_DATABASE_URL
+        sync: false
+      - key: FIREBASE_CREDS_FILE
+        sync: false
+      - key: LAVALINK_SERVER_ADDRESS
+        sync: false
+      - key: LAVALINK_SERVER_PORT
+        sync: false
+      - key: LAVALINK_SERVER_PASSWORD
+        sync: false
