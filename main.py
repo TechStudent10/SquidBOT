@@ -9,6 +9,8 @@ import random, os
 from dotenv import load_dotenv
 load_dotenv()
 
+from webserver import keep_alive
+
 presence_string_list = [
     "SquidKIDS",
     "moderators",
@@ -105,4 +107,5 @@ async def profile(ctx, member: interactions.User):
     await ctx.send(embeds=embed)
 
 bot.load("exts.moderation")
+keep_alive()
 bot.start()
