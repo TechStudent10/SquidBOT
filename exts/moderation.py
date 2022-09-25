@@ -2,6 +2,8 @@ import interactions
 import firebase_admin
 from firebase_admin import db
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 cred_obj = firebase_admin.credentials.Certificate(os.getenv("FIREBASE_CREDS_FILE"))
 default_app = firebase_admin.initialize_app(cred_obj, {

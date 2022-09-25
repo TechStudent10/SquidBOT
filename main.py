@@ -30,7 +30,7 @@ root = db.reference("/")
 warns = db.reference("/warns")
 
 bot = interactions.Client(token=os.getenv("TOKEN"), intents=interactions.Intents.DEFAULT | interactions.Intents.GUILD_MEMBERS)
-LOGS_CHANNEL = 1016429819094913044
+LOGS_CHANNEL = os.getenv("LOGS_CHANNEL")
 
 @bot.event
 async def on_start():
