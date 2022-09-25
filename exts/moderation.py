@@ -11,8 +11,8 @@ default_app = firebase_admin.initialize_app(cred_obj, {
 root = db.reference("/")
 warns = db.reference("/warns")
 
-STAFF_ID = 928730412694507621
-MUTED_ID = 929078916151406622
+STAFF_ID = os.getenv("STAFF_ID")
+MUTED_ID = os.getenv("MUTED_ID")
 
 class Moderation(interactions.Extension):
     def __init__(self, client):
